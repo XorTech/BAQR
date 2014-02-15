@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/page_background" >
+
+    <TableRow
+        android:id="@+id/layoutMain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/vpnBtn"
+            style="@style/btnStyleArsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_arsenic"
+            android:drawableTop="@drawable/selector_vpn"
+            android:text="VPN" />
+
+        <Button
+            android:id="@+id/bluetoothBtn"
+            style="@style/btnStyleArsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_arsenic"
+            android:drawableTop="@drawable/selector_bluetooth"
+            android:text="SERIAL" />
+    </TableRow>
+	
+    <TableRow
+        android:id="@+id/layoutMain"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="5dip" >
+
+	    <Button
+	        android:id="@+id/videoBtn"
+	        style="@style/btnStyleArsenic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_btn_arsenic"
+	        android:drawableTop="@drawable/selector_video"
+	        android:text="SEND VIDEO" />
+
+	    <Button
+	        android:id="@+id/playVidBtn"
+	        style="@style/btnStyleArsenic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_btn_arsenic"
+	        android:drawableTop="@drawable/selector_play_video"
+	        android:text="RECEIVE VIDEO" />
+
+	</TableRow>
+
+	<TableRow
+	    android:id="@+id/layoutMain3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+		android:padding="5dip" >
+
+	    <Button
+	        android:id="@+id/locationBtn"
+	        style="@style/btnStyleArsenic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_btn_arsenic"
+	        android:drawableTop="@drawable/selector_locate"
+	        android:text="LOCATE" />
+
+	    <Button
+	        android:id="@+id/mapBtn"
+	        style="@style/btnStyleArsenic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_btn_arsenic"
+	        android:drawableTop="@drawable/selector_map"
+	        android:text="COPTIC" />
+	</TableRow>
+</TableLayout>

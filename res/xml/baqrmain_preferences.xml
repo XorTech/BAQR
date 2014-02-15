@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+    <!-- Enable base mode. Used with COPTIC -->
+    <PreferenceCategory 
+        android:title="Operating Mode">
+        
+		<CheckBoxPreference 
+			android:title="Base Station Mode" 
+	      	android:key="isBaseStation" 
+	      	android:summary="Required if used with the COPTIC base station" />
+		
+    </PreferenceCategory>
+    
+	<!-- Map type is either Google Maps or Maps with Me -->
+	<PreferenceCategory 
+    	android:title="General Settings">   
+    	     
+        <ListPreference android:title="Map Type"
+        	android:summary="Select the type of maps you would like to use"
+            android:key="mapType"
+            android:defaultValue="1"
+            android:entries="@array/mapNames"
+            android:entryValues="@array/mapValues" />
+        
+	</PreferenceCategory>
+	
+	<!-- Base multicast information. Relay SMS to multicast -->
+	<PreferenceCategory 
+	    android:title="Base Multicast Settings">
+	    
+        <EditTextPreference 
+            android:key="baseMultiAddr" 
+            android:summary="The IP address to multicast received data" 
+            android:title="Multicast Address" 
+            android:defaultValue="224.10.10.1"/>
+        
+        <EditTextPreference 
+            android:key="baseMultiPort" 
+            android:summary="The port number associated with the multicast address" 
+            android:title="Multicast Port" 
+            android:defaultValue="17012"/>
+        
+	</PreferenceCategory>
+	
+</PreferenceScreen>

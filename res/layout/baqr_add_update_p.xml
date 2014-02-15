@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/page_background"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Panic Manager"
+        android:textSize="30sp"
+        style="@style/btnStyleArsenic"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/add_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:background="#FFFFFF"
+        android:hint="Name"
+        android:maxLength="20" />
+
+    <EditText
+        android:id="@+id/add_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:background="#FFFFFF"
+        android:hint="Mobile"
+        android:inputType="phone"
+        android:maxLength="14" />
+
+    <LinearLayout
+        android:id="@+id/add_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/add_save_btn"
+            style="@style/btnStyleArsenic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/add_view_all"
+            style="@style/btnStyleArsenic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="View" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/update_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/update_btn"
+            style="@style/btnStyleArsenic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/update_view_all"
+            style="@style/btnStyleArsenic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="View" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_background"
+    android:orientation="vertical" >
+     
+    <LinearLayout
+        android:id="@+id/LinearLayout7"
+    	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+        	
+    	<Button
+        	android:id="@+id/deleteBtn"
+            style="@style/btnStyleArsenic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:background="@drawable/selector_btn_arsenic"
+            android:text="Delete" />
+        	
+    	<Button
+            android:id="@+id/UpdateList"
+            style="@style/btnStyleArsenic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:background="@drawable/selector_btn_arsenic"
+            android:text="Refresh" />     
+              	
+	</LinearLayout>  
+
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_above="@+id/LinearLayout7" >
+    	
+        <Button
+        	android:id="@+id/getMapBtn"
+        	style="@style/btnStyleArsenic"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="0.50"
+        	android:background="@drawable/selector_btn_arsenic"
+        	android:text="Map" />
+        
+    	<Button
+        	android:id="@+id/getLocs"
+        	style="@style/btnStyleArsenic"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="0.50"
+        	android:background="@drawable/selector_btn_arsenic"
+        	android:text="Locate" />
+    	  	
+	</LinearLayout>
+ 	
+   	<ListView
+        android:id="@+id/SMSList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LinearLayout3"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+    
+</RelativeLayout>

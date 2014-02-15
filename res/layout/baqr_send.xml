@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/page_background"
+    android:orientation="vertical" >   
+    
+    <Button
+    	android:id="@+id/panicBtn"
+        style="@style/btnStyleArsenic"
+        android:background="@drawable/selector_btn_arsenic"
+        android:text="Panic!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendSABtn" />
+      
+    <Button
+        android:id="@+id/sendSABtn"
+        style="@style/btnStyleArsenic"
+        android:text="Send Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_arsenic"
+        android:layout_alignParentBottom="true" />
+       
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_background" >
+
+    <fragment
+        android:id="@+id/copticMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/copticMapLinLay" />
+
+    <LinearLayout
+        android:id="@+id/copticMapLinLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/copticClearBtn"
+            style="@style/btnStyleArsenic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:background="@drawable/selector_btn_arsenic"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/copticDrawBtn"
+            style="@style/btnStyleArsenic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:background="@drawable/selector_btn_arsenic"
+            android:text="Draw" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:entries="@array/mapViewName"
+        android:prompt="@array/mapViewName"
+        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+</RelativeLayout>

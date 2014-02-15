@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android" >	
+	
+    <!-- Coptic chat username for this device -->
+    <PreferenceCategory
+        android:title="Multicast Settings - User" >
+	    
+	    <EditTextPreference 
+            android:key="multicastName" 
+            android:summary="The id of this device that will be seen by others" 
+            android:title="My Multicast ID" 
+            android:defaultValue="BAQR-001"/>
+    	
+   	</PreferenceCategory>
+	
+    <!-- Coptic chat multicast settings -->
+	<PreferenceCategory 
+	    android:title="Multicast Settings - Chat" >
+	    
+	   	<CheckBoxPreference 
+			android:title="Enable Multicast" 
+      		android:key="multicast_1" 
+      		android:summary="Check to enable this option" />
+	    
+        <EditTextPreference 
+            android:key="ipAddrOne" 
+            android:summary="IP address to listen/send multicast data" 
+            android:title="Multicast Address" 
+            android:defaultValue="224.10.10.1"/>
+        
+        <EditTextPreference 
+            android:key="multiPort" 
+            android:summary="The port number associated with the multicast address" 
+            android:title="Multicast Port" 
+            android:defaultValue="17012"/>
+        
+    </PreferenceCategory>
+    
+	<PreferenceCategory
+	    android:title="Chat Details" >
+	    
+	    <EditTextPreference 
+	        android:key="chatRoomName"
+	        android:summary="Allows user to specify a chat room name. Default 'All Chat Rooms'"
+	        android:title="Chat Room Name"
+	        android:defaultValue="All Chat Rooms" />
+	    
+	    <ListPreference 
+	        android:title="Auto Location Update Interval"
+	        android:summary="Interval to send periodic location updates in the background"
+	        android:key="sendInterval"
+            android:defaultValue="100"
+            android:entries="@array/reportNames"
+            android:entryValues="@array/reportValues" />
+	    
+	</PreferenceCategory>
+    
+	<!-- Coptic chat multicast preset messages -->
+	<PreferenceCategory 
+	    android:title="Multicast Presets" >
+        
+        <EditTextPreference
+            android:key="cmd_9"
+            android:summary="Manually entered message for multicast"
+            android:title="Multicast Preset 1" />
+        
+        <EditTextPreference
+            android:key="cmd_10"
+            android:summary="Manually entered message for multicast"
+            android:title="Multicast Preset 2" />
+        
+        <EditTextPreference
+            android:key="cmd_11"
+            android:summary="Manually entered message for multicast"
+            android:title="Multicast Preset 3" />
+        
+        <EditTextPreference
+            android:key="cmd_12"
+            android:summary="Manually entered message for multicast"
+            android:title="Multicast Preset 4" />
+        
+        <EditTextPreference
+            android:key="cmd_13"
+            android:summary="Manually entered message for multicast"
+            android:title="Multicast Preset 5" />
+        
+        <EditTextPreference
+            android:key="cmd_14"
+            android:summary="Manually entered message for multicast"
+            android:title="Multicast Preset 6" />
+        
+        <EditTextPreference
+            android:key="cmd_15"
+            android:summary="Manually entered message for multicast"
+            android:title="Multicast Preset 7" />
+        
+        <EditTextPreference
+            android:key="cmd_16"
+            android:summary="Manually entered message for multicast"
+            android:title="Multicast Preset 8" />
+        
+    </PreferenceCategory>
+	
+</PreferenceScreen>

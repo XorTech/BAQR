@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/blueMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    android:background="#000000" >
+
+    <LinearLayout
+        android:id="@+id/blueMainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/blueMainLayout2"
+        android:orientation="horizontal" >
+
+        <EditText
+			android:id="@+id/blueTxtBox"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:hint="@string/commandHint"
+        	android:textColor="#FFFFFF"
+        	android:imeOptions="actionSend"
+        	android:inputType="textNoSuggestions" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blueMainLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/blueMainLayout3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPreset1"
+            style="@style/btnStyleArsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="CMD 1" />
+
+        <Button
+            android:id="@+id/btnPreset2"
+            style="@style/btnStyleArsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="CMD 2" />
+
+        <Button
+            android:id="@+id/btnPreset3"
+            style="@style/btnStyleArsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="CMD 3" />
+        
+        <Button
+            android:id="@+id/btnPreset4"
+            style="@style/btnStyleArsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="CMD 4" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/blueMainLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPreset5"
+            style="@style/btnStyleArsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="CMD 5" />
+
+        <Button
+            android:id="@+id/btnPreset6"
+            style="@style/btnStyleArsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="CMD 6" />
+
+        <Button
+            android:id="@+id/btnPreset7"
+            style="@style/btnStyleArsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="CMD 7" />
+        
+        <Button
+            android:id="@+id/btnPreset8"
+            style="@style/btnStyleArsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="CMD 8" />
+    </LinearLayout>
+
+    <com.bluetooth.activities.LogView
+        android:id="@+id/tvData"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/blueMainLayout"
+        android:layout_alignParentTop="true"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

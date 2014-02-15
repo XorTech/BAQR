@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android" >	
+	
+    <!-- Baqr Location Options -->
+    <PreferenceCategory
+        android:title="Operating Mode" >
+        
+		<CheckBoxPreference
+		    android:title="Run as Solo Application"
+		    android:key="runSolo"
+		    android:summary="Check this if your panic numbers do not have BAQR installed" />
+		
+	</PreferenceCategory>
+     
+    <!-- Baqr Location Settings, which includes secret, mobileID, and passcode -->
+	<PreferenceCategory 
+    	android:title="General Settings">
+		
+        <EditTextPreference 
+            android:key="secretCode" 
+            android:title="Secret Code" 
+            android:summary="Secret Code Summary" 
+            android:defaultValue="1234"/>
+        
+    	<EditTextPreference 
+    	    android:title="Mobile ID" 
+    	    android:key="tagID" 
+    	    android:summary="TagID Summary" 
+    	    android:defaultValue="8775550000"/>
+    	
+        <EditTextPreference 
+            android:title="Lock Code" 
+            android:key="lockCode" 
+            android:summary="Lock Code Summary" 
+            android:defaultValue="12345"/>
+        
+	</PreferenceCategory>
+	
+</PreferenceScreen>

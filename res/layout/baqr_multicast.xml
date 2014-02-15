@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"    
+    android:id="@+id/RelativeLayout11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        
+    <LinearLayout
+        android:id="@+id/LinearLayout12"
+    	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout13"
+        android:layout_alignParentLeft="true" >
+        
+        <EditText
+	        android:id="@+id/editMultiBox"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/White"
+	        android:inputType="text"
+	        android:ems="10"
+	        android:hint="Message"
+	        android:maxLength="20"
+	        android:textColor="@color/Black"
+	        android:textSize="25sp" >
+	        <requestFocus />
+	    </EditText>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+ 		
+        <Button
+            android:id="@+id/startMultiBtn"
+            style="@style/btnStyleArsenic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:background="@drawable/selector_btn_arsenic"
+            android:text="Start" />
+ 		
+        <Button
+    	    android:id="@+id/clearMultiBtn"
+    	    style="@style/btnStyleArsenic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+    	    android:background="@drawable/selector_btn_arsenic"
+    	    android:text="Clear" />
+ 		
+    	<Button
+        	android:id="@+id/sendMultiBtn"
+			android:background="@drawable/selector_btn_arsenic"  
+			style="@style/btnStyleArsenic"      
+			android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+        	android:layout_gravity="bottom"       
+        	android:text="Send" />    
+              	
+	</LinearLayout>  
+ 	
+   	<ListView
+        android:id="@+id/multicastList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LinearLayout12"
+        android:focusable="false"
+        android:stackFromBottom="true"
+        android:focusableInTouchMode="false" />
+    
+</RelativeLayout>

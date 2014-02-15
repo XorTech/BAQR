@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+    <!-- Bluetooth Presets -->
+    <PreferenceCategory android:title="Command Presets" >
+        
+        <EditTextPreference
+            android:key="cmd_1"
+            android:summary="Manually entered command for terminal view"
+            android:title="Command Preset 1" />
+        
+        <EditTextPreference
+            android:key="cmd_2"
+            android:summary="Manually entered command for terminal view"
+            android:title="Command Preset 2" />
+        
+        <EditTextPreference
+            android:key="cmd_3"
+            android:summary="Manually entered command for terminal view"
+            android:title="Command Preset 3" />
+        
+        <EditTextPreference
+            android:key="cmd_4"
+            android:summary="Manually entered command for terminal view"
+            android:title="Command Preset 4" />
+        
+        <EditTextPreference
+            android:key="cmd_5"
+            android:summary="Manually entered command for terminal view"
+            android:title="Command Preset 5" />
+        
+        <EditTextPreference
+            android:key="cmd_6"
+            android:summary="Manually entered command for terminal view"
+            android:title="Command Preset 6" />
+        
+        <EditTextPreference
+            android:key="cmd_7"
+            android:summary="Manually entered command for terminal view"
+            android:title="Command Preset 7" />
+        
+        <EditTextPreference
+            android:key="cmd_8"
+            android:summary="Manually entered command for terminal view"
+            android:title="Command Preset 8" />
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>
